@@ -1,0 +1,282 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+
+/* default styles */
+:root {
+--almost-white: hsl(0, 0%, 98%);
+--medium-gray: hsl(0, 0%, 41%);
+--almost-black: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Epilogue', sans-serif;
+}
+
+
+p {
+    font-size: 1.125rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* main styles */
+
+main {
+    display: grid;
+    gap: 2em;
+    padding-block-end: 4em;
+    position: relative;
+    width: 370px;
+    border: 1px solid;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    gap: 150px;
+    align-items: center;
+    cursor: pointer;
+    padding-block-start: 0.7em;
+}
+
+.menu_icon {
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+.menu_icon > * {
+    width: 30px;
+    height: 2.5px;
+    background-color: var(--almost-black);
+    margin: 4px 0;
+    transition: 0.4s;
+    
+}
+
+.change .line1 {
+    transform: translate(0, 4.5px) rotate(-54deg);
+}
+
+
+.change .line2 {
+    opacity: 0;
+}
+
+
+.change .line3 {
+    transform: translate(0, -9px) rotate(53deg);
+}
+
+
+.remote_ {
+    display: grid;
+    gap: 1.5em;
+    text-align: center;
+}
+
+
+
+.remote_heading {
+    font-size: 2rem;
+    padding-block-start: 1em;
+}
+
+
+.remote_text {
+    width: 310px;
+    color: var(--medium-gray);
+    font-size: 0.9rem;
+    margin-inline: auto;
+    word-spacing: 2px;
+}
+
+
+
+.learn_more {
+    text-decoration: none;
+    background-color: var(--almost-black);
+    width: fit-content;
+    margin-inline: auto;
+    padding: 0.7em 1.3em;
+    color: var(--almost-white);
+    border-radius: 0.3em;
+}
+
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+    padding-block-start: 1em;
+    padding-inline: 1em;
+}
+
+.clients img {
+    height: 0.9em;    
+} 
+
+
+/* overlay and nav links */
+
+.extra_layer {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: width 0.5s;
+}
+
+.extra_layer.show_cover {
+    width: 40%;
+}
+
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    /* opacity: 0; */
+    height: 100%;
+    background-color: var(--almost-white);
+    overflow: hidden;
+    transition: width 0.5s;
+}
+
+
+
+
+.cover.show_cover{
+    width: 60%;
+}
+
+
+
+.cover nav {
+    padding: 4em 0 1em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.cover nav ul {
+    display: none
+}
+
+
+.cover nav ul.show {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.arrow.show_nav{
+    transform: rotate(180deg);
+}
+
+
+
+.cover nav a {
+    display: inline-block;
+    width: 90px;
+    
+    text-decoration: none;
+    color: var(--medium-gray);
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+
+.cover div > a {
+    text-decoration: none;
+    color: var(--medium-gray);
+    font-size: 0.7em;
+    text-align: center;
+}
+
+
+
+.register {
+    border: 1px solid;
+    padding: 1em 1.5em;
+
+}
+
+
+.arrow {
+    margin-inline-start: 1.5em;
+    height: 0.5em;
+}
+
+
+
+.company.arrow {
+    margin-inline-start: 1.27em;
+}
+
+
+
+.register:hover {
+    background-color: rgb(15, 14, 14, 0.9);
+    color: var(--almost-white);
+    transition: color 0.1s ease-in-out;
+}
+
+
+
+.features_list {
+    display: grid;
+    list-style: none;
+    margin-inline: 2.5em;
+    gap: 14px;
+}
+
+
+.features_list li {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-inline-start: -1.4em;
+}
+
+
+.company_list {
+    display: grid;
+    list-style: none;
+    margin-inline: 1.3em;
+    gap: 10px;
+}
+
+
+
+.cover .member {
+    margin-block-start: 1em;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 15px;
+}
