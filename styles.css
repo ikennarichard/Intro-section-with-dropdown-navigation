@@ -202,11 +202,15 @@ header {
 .cover nav a {
     display: inline-block;
     width: 90px;
-    
     text-decoration: none;
     color: var(--medium-gray);
     font-size: 0.8rem;
     transition: 0.3s;
+}
+
+
+.cover nav a:hover {
+    color: var(--almost-black);
 }
 
 
@@ -215,6 +219,12 @@ header {
     color: var(--medium-gray);
     font-size: 0.7em;
     text-align: center;
+    
+}
+
+
+.cover div > a:nth-child(1):hover {
+   color: var(--almost-black);
 }
 
 
