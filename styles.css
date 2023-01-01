@@ -284,7 +284,7 @@ header {
 /* media queries */
 
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
     .menu_icon {
         display: none;
@@ -407,6 +407,7 @@ header {
         border-radius: 0.5em;
         padding: 0.6em 0;
         width: 6em;
+        
     }
 
 
