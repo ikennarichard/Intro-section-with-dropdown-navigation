@@ -229,6 +229,7 @@ header {
 .arrow {
     margin-inline-start: 1.5em;
     height: 0.5em;
+    transition: 0.4s;
 }
 
 
@@ -338,7 +339,6 @@ header {
         height: fit-content;
         grid-column: 1 / span 2;
         grid-row: 1;
-        border: 1px solid;
         padding-inline-start: 1em;
         gap: 10px;
     }
@@ -395,7 +395,7 @@ header {
         border-radius: 0.5em;
         padding: 0.6em 0;
         width: 8.4em;
-
+        box-shadow:0 5px 29px 3px gainsboro;
     }
 
 
@@ -407,7 +407,7 @@ header {
         border-radius: 0.5em;
         padding: 0.6em 0;
         width: 6em;
-        
+        box-shadow:0 5px 29px 3px gainsboro; 
     }
 
 

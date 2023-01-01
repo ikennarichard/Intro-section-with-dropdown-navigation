@@ -11,7 +11,7 @@ const arrow = [...document.querySelectorAll('.arrow')];
 
 const navList = [...document.querySelectorAll('.cover nav > div')];
 
-/*slide menu button */
+
 
 
 menuIcon.addEventListener('click', menuSlide);
