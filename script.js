@@ -9,7 +9,7 @@ const menuLinks = [...document.querySelectorAll('.menu_links > a')];
 
 const arrow = [...document.querySelectorAll('.arrow')];
 
-const navList = [...document.querySelectorAll('.cover nav ul')];
+const navList = [...document.querySelectorAll('.cover nav > div')];
 
 /*slide menu button */
 

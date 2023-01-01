@@ -46,7 +46,6 @@ main {
     padding-block-end: 4em;
     position: relative;
     width: 370px;
-    border: 1px solid;
 }
 
 
@@ -183,12 +182,12 @@ header {
 }
 
 
-.cover nav ul {
-    display: none
+.cover nav > div {
+    display: none;
 }
 
 
-.cover nav ul.show {
+.cover nav > div.show {
     display: flex;
     flex-direction: column;
 }
@@ -279,4 +278,171 @@ header {
     flex-direction: column;
     align-self: center;
     gap: 15px;
+}
+
+
+/* media queries */
+
+
+@media (min-width: 768px) {
+
+    .menu_icon {
+        display: none;
+    }
+
+
+    .extra_layer {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        width: 970px;
+        padding: 0;
+        margin: 0;
+        background-color: var(--almost-white);
+    }
+
+
+    .remote_ {
+        order: -1;
+        grid-column: 1;
+        grid-row: 2;
+        padding: 0;
+        padding-block-start: 4em;
+        margin-inline-start: 6em;
+        height: fit-content;
+        text-align: left;
+        width: 330px;
+        gap: 30px;
+        /* margin-block: auto; */
+    }
+
+
+    .remote_heading {
+        font-size: 3rem;
+    }
+
+    .remote_text {
+        padding: 0;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+    header {
+        height: fit-content;
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        border: 1px solid;
+        padding-inline-start: 1em;
+        gap: 10px;
+    }
+
+
+    .cover {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: initial;
+        width: 100%;
+        padding: 0;
+        padding-inline-start: 1.5em;
+    }
+    
+
+    .cover nav {
+        padding: 1em 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .cover .member {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding-inline-end: 2em;
+    }
+
+
+    .cover .member > a {
+        display: inline-block;
+    }
+
+
+    .log_in {
+        padding: 0.6em 0;
+    }
+    
+    
+    .register {
+        border: 1px solid;
+        border-radius: .4em;
+        padding: 0.6em .4em;
+    }
+
+    .cover nav > .features_  {
+        position: absolute;
+        top: 3.5em;
+        left: 5.4em;
+        background-color: white;
+        border-radius: 0.5em;
+        padding: 0.6em 0;
+        width: 8.4em;
+
+    }
+
+
+    .cover nav > .company_ {
+        position: absolute;
+        top: 3.5em;
+        left: 14.8em;
+        background-color: white;
+        border-radius: 0.5em;
+        padding: 0.6em 0;
+        width: 6em;
+    }
+
+
+    .cover nav > div a {
+       padding: 0;
+       font-size: 0.7rem;
+    }
+
+
+    .clients {
+        grid-row: 3;
+        grid-column: 1;
+        padding: 0;
+        justify-content: center;
+        gap: 10px;
+        margin-block-start: -3em;
+    } 
+
+
+    .hero_image {
+        grid-column: 2;
+    }
+
+
+    .hero_image img {
+        height: 500px;
+    }
+
+    
+    .learn_more {
+      padding: 0.7em 0.7em;
+      margin: 0;
+      background: transparent;
+      color: var(--almost-black);
+      border: 1px solid var(--almost-black);
+      font-size: 0.8rem;
+      padding-inline: 1.3em;
+    }
 }
